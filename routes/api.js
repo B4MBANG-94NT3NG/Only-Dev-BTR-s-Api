@@ -288,7 +288,75 @@ router.get('/remove', (req, res, next) => {
         res.json(loghandler.error)
     }
 })
+router.get('/genre/adventure', (req, res) => {
 
+var apikeyInput = req.query.apikey
+
+if(!apikeyInput) return res.json(loghandler.notparam)
+
+if(apikeyInput != 'zahirgans') return res.json(loghandler.invalidKey)
+
+const { default: Axios } = require('axios')
+
+const cheerio = require('cheerio')
+
+Axios.get('https://jadwalnonton.com/now-playing')
+
+.then(({ data }) => {
+
+     const $ = cheerio.load(data)
+
+     let title = []
+
+     let url = []
+
+     let img = []
+
+ 	$('div.row > div.item > div.clearfix > div.rowl > div.col-xs-6 > a').get().map((rest) => {         url.push($(rest).attr('href'))
+
+         })
+
+         $('div.row > div.item > div.clearfix > div.rowl > div.col-xs-6 > a > img').get().map((rest) => {
+
+        	title.push($(rest).attr('alt'))
+
+         })
+
+         $('div.row > div.item > div.clearfix > div.rowl > div.col-xs-6 > a > img').get().map((rest) => {
+
+        	img.push($(rest).attr('src'))
+
+         })
+
+     let result = []
+
+     for (let i = 0; i < url.length; i++) {
+
+          result.push({
+
+               	url: url[i],
+
+               	title: title[i],
+
+               	img: img[i]
+
+          })
+
+     }
+
+     res.send({
+
+     creator:  `${creator}`,
+
+     status: true,
+
+     result: result
+
+     })
+
+})
+
+})
 router.get('/yt/play', async (req, res, next) => {
 	var vid = [];
 	var apikeyInput = req.query.apikey,
