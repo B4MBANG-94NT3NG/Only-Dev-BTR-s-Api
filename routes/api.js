@@ -157,7 +157,7 @@ var len = 15
         
  
  async function cekApiKey(api) {
- 	ap = await BambangGans.findOne({apikey:api})
+ 	ap = await BambangGans.web apikey({apikey:api})
  return ap;
  }
 router.get('/web/cekapikey', async (req, res, next) => {
