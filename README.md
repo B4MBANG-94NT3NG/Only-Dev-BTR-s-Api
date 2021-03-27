@@ -1,11 +1,11 @@
 <div align="center">
  
-# Source Codes - Rahmad-Api
+# Source Codes - Only Dev BTR Api's
 <p align="center">
-<a href="#"><img title="Rahmad-Api" src="https://img.shields.io/badge/rahmad-api Api-blue?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="OnlyDevBTR API's" src="https://img.shields.io/badge/OnlyDevBTR Api-blue?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/RAHMAD1980"><img title="Author" src="https://img.shields.io/badge/Author-Rahmad-orange.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/B4MBANG-94NT3NG"><img title="Author" src="https://img.shields.io/badge/Author-Bambang-orange.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
 <a href="https://github.com/RAHMAD1980/followers"><img title="Followers" src="https://img.shields.io/github/followers/RAHMAD1980?color=red&style=flat-square"></a>
@@ -14,8 +14,8 @@
 <a href="https://github.com/RAHMAD1980/rahmad-api/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/RAHMAD1980/rahmad-api?label=Watchers&color=blue&style=flat-square"></a>
 </p>
 <p align='center'>
-   <a href="https://wa.me/447520607861"><img height="30" src="https://c.top4top.io/p_1837yybbf0.jpeg"></a>&nbsp;&nbsp;
-   <a href="https://instagram.com/rahmad.80"><img height="30" src="https://raw.githubusercontent.com/TobyG74/TobyG74/main/instagram.jpg"></a>
+   <a href="https://wa.me/6282313021398"><img height="30" src="https://c.top4top.io/p_1837yybbf0.jpeg"></a>&nbsp;&nbsp;
+   <a href="https://instagram.com/sadboy.edtz"><img height="30" src="https://raw.githubusercontent.com/TobyG74/TobyG74/main/instagram.jpg"></a>
 </P>
 
 ## 🛠️ My-Api
