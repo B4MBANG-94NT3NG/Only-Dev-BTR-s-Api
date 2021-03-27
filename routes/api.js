@@ -160,7 +160,7 @@ var len = 15
  	ap = await BambangGans.findOne({apikey:api})
  return ap;
  }
-router.get('/find', async (req, res, next) => {
+router.get('/web/cekapikey', async (req, res, next) => {
     var apikey = req.query.apikey
     if (!apikey) return res.json(loghandler.notparam)
     if (apikey != 'BambangGans') return res.json(loghandler.invalidKey)
@@ -180,7 +180,7 @@ router.get('/find', async (req, res, next) => {
     }
 })
 
-router.get('/web/cekapikey', async (req, res, next) => {
+router.get('cekapikey', async (req, res, next) => {
 	var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	a = await cekApiKey(apikeyInput)
