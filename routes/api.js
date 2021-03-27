@@ -180,7 +180,7 @@ router.get('/find', async (req, res, next) => {
     }
 })
 
-router.get('/cekapikey', async (req, res, next) => {
+router.get('cekapikey', async (req, res, next) => {
 	var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	a = await cekApiKey(apikeyInput)
