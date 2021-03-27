@@ -166,7 +166,8 @@ router.get('/web/cekapikey', async (req, res, next) => {
     if (apikey != 'BambangGans') return res.json(loghandler.invalidKey)
 
     try {
-        .then(() => {
+     BambangGans.web apikey()
+        .then(result => {
                res.json({
                     status: true,
                     creator: `${creator}`,
