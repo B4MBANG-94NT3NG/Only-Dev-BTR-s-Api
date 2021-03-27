@@ -157,7 +157,7 @@ var len = 15
         
  
  async function cekApiKey(api) {
- 	ap = await BambangGans.web apikey({apikey:api})
+ 	ap = await BambangGans.webOne({apikey:api})
  return ap;
  }
 router.get('/web/cekapikey', async (req, res, next) => {
@@ -166,7 +166,7 @@ router.get('/web/cekapikey', async (req, res, next) => {
     if (apikey != 'BambangGans') return res.json(loghandler.invalidKey)
 
     try {
-     BambangGans.web apikey()
+     BambangGans.web()
         .then(result => {
                res.json({
                     status: true,
